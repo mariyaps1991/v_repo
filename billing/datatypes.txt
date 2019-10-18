@@ -1,0 +1,27 @@
+
+1. number --> int, float, complex
+2. string --> ""
+
+3. list --> []
+4. tuple --> ()
+5. dictionary --> {}
+6. set -->set() --> {} of keys
+
+PEP8 --> naming convention, importing, file structure, etc..
+
+
+operators:
+
+arithmatic: +, -, *, /, //, %, **
+
+comparison: ==, <=, >=, !=, <, >
+
+Logical Operator: and, or
+
+Membership Operator: in, not in
+
+Identity Operator: is, is not
+
+Boolean: True, False
+
+
