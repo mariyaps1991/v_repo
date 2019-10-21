@@ -19,6 +19,5 @@ grocery = {'Colgate': {'price': 30, 'stock': 1},
 
 data = [fruits, stationary, grocery]
 
-
 store = {'name': 'Nilgris'}
 
