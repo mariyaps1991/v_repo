@@ -1,19 +1,34 @@
-
-products = []
-products_to_bill = {'Pen': 5, 'Pencil': 2, 'Colgate': 10}
+from store.store_data import data
 
 
-def add_items():
+cart = []
+
+
+def add_products_to_cart(*args):
     """
     This method is to add product to cart
     :return: None
     """
-    product_name = input('Enter the product name: ')
-    products.append(product_name)
+    if not args:
+        done_adding_products = False
+        while not done_adding_products:
+            product_name = input("Enter the product name: ")
+            cart.append(product_name)
+            done_adding_products = input("Done adding products to cart? Default 'n' (y/n): ")
+            if done_adding_products == 'y' or done_adding_products == 'yes':
+                done_adding_products = True
+            else:
+                done_adding_products = False
+    else:
+        for product_name in args:
+            cart.append(product_name)
+
+    display_cart_items()
+
     print("Items added successfully")
 
 
-def display_items():
+def display_cart_items():
     """
     Display the products in cart
     :return: None
@@ -21,7 +36,7 @@ def display_items():
     print("=" * 40)
     print("You have added below products to your cart.")
     #print(products)
-    for sno, product in enumerate(products, 1):
+    for sno, product in enumerate(cart, 1):
         print(str(sno) + ". " + product)
     print("=" * 40, "\n")
 
@@ -31,12 +46,21 @@ def print_bill():
     This method is to print the bill copy
     :return: None
     """
+    products_to_bill = {}
+    for cart_product in cart:
+        for category in data:
+            for product, prod_data in category.items():
+                if cart_product == product:
+                    print(f'Item {cart_product} found')
+
     print("\tProduct {0:20} Price {0:10}".format(" "))
     print("-" * 40)
+    """
     for product, price in products_to_bill.items():
         if product in products:
             print(f"\t{product:20} {price:10}")
     print("=" * 40)
+    """
 
 
 def main():
@@ -44,14 +68,7 @@ def main():
     Main function to add and display cart information
     :return: None
     """
-    want_to_proceed = True
-    while want_to_proceed:
-        add_items()
-        want_to_exit = input('Done adding product to the cart(default "n")? (y/n)')
-        if want_to_exit == 'y':
-            want_to_proceed = False
-
-    display_items()
+    add_products_to_cart('Orange')
     print_bill()
 
 main()
