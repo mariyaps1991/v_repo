@@ -1,6 +1,6 @@
 import subprocess
 from view import show_stocks
-from product_management import add_products
+from product_management import add_products_to_store
 from billing.pricing import get_bill
 
 
@@ -26,11 +26,11 @@ def list_options():
     print(choice)
 
     if choice == 1:
-        get_bill(10, 10, 20)
+        get_bill()
     elif choice == 2:
         show_stocks()
     elif choice == 3:
-        add_products()
+        add_products_to_store()
     elif choice == 4:
         update_product_detail()
     elif choice == 5:

@@ -3,6 +3,7 @@ Maintain store and product information.
 This is being used as database
 """
 
+
 SHOP_NAME = "Nilgris"
 SHOP_CODE = 12047
 

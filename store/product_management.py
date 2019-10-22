@@ -2,11 +2,14 @@ from store_data import data as store_data
 from view import show_stocks
 
 
+global fruits
+
+
 def update_product_detail():
     pass
 
 
-def add_products(*args):
+def add_products_to_store(*args):
     category = input("Enter the product category(fruits, grocery, stationary): ")
     item = {}
     price = 0
@@ -56,4 +59,4 @@ def alert_product_expiry():
 
 
 if __name__ == '__main__':
-    add_products('Orange', 'Gova', 'Pomo')
+    add_products_to_store('Orange', 'Gova', 'Pomo')
