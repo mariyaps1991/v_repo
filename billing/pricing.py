@@ -1,18 +1,49 @@
+from billing.cart import add_products_to_cart
+from store.store_data import data as store_data
 
 
-def get_bill(price1, price2):
+def get_bill():
+    items = add_products_to_cart()
+    bill_data = get_bill_data(items)        # "Product, price "
+    calculate_total(bill_data)
+
+
+def get_bill_data(cart_products):
     """
-    This method is to bill on two products
-    :param arg1: type is number
-    :param arg2: type is number
+    This method is to print the bill copy
     :return: None
     """
-    total = price1 + price2
-    print("Amount is ", total)
-    return total
+    bill_data = {}
+    for cart_product in cart_products:
+        item_found = False
+        for category in store_data:
+            for store_product, prod_data in category.items():
+                if cart_product == store_product:
+                    print(f'Item {cart_product} is available in store')
+                    item_found = True
+                    bill_data.update({cart_product: prod_data['price']})
 
-"""
-1. Add products to cart  --> add_products_to_cart
-2. Payment details
-3. Billing
-"""
+        if not item_found:
+            print(f'{cart_product} is not available in store')
+
+    print("Bill Data: ", bill_data)
+    return bill_data
+
+
+def calculate_total(data_dict):
+    """
+    This is to provide the bill amount on the available items in cart
+    :param data_dict: product and price combo
+    :return: None
+    """
+    print("=" * 40)
+    print("\tProduct {0:20} Price {0:10}".format(" "))
+    print("-" * 40)
+
+    for product, price in data_dict.items():
+        print(f"\t{product:20} {price:10}")
+    print("=" * 40)
+
+
+if __name__ == '__main__':
+    get_bill()
