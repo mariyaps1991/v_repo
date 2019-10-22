@@ -35,10 +35,10 @@ def add_products_to_store(*args):
         fruits = store_data[0]
         fruits.update(item)
     if category == 'stationary':
-        stationary = store_data[2]
+        stationary = store_data[1]
         stationary.update(item)
     if category == 'grocery':
-        grocery = store_data[1]
+        grocery = store_data[2]
         grocery.update(item)
 
     show_stocks(category)
