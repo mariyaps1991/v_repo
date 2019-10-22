@@ -2,9 +2,6 @@ from store_data import data as store_data
 from view import show_stocks
 
 
-global fruits
-
-
 def update_product_detail():
     pass
 
