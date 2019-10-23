@@ -1,10 +1,16 @@
 from billing.cart import add_products_to_cart
-from store.store_data import data as store_data
+#from store.store_data import data as store_data
+from billing import data
 
 
 def get_bill():
+    print(data)
+    exit()
     items = add_products_to_cart()
     bill_data = get_bill_data(items)        # "Product, price "
+    if not bill_data:
+        print("Your cart is empty or not having available stocks")
+        return None
     calculate_total(bill_data)
 
 
@@ -26,7 +32,6 @@ def get_bill_data(cart_products):
         if not item_found:
             print(f'{cart_product} is not available in store')
 
-    print("Bill Data: ", bill_data)
     return bill_data
 
 

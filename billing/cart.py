@@ -1,15 +1,9 @@
-from store.store_data import data
-
-
-cart = []
-
-
 def add_products_to_cart(*args):
     """
     This method is to add product to cart
     :return: None
     """
-
+    cart = []
     if not args:
         done_adding_products = False
         while not done_adding_products:
@@ -24,20 +18,18 @@ def add_products_to_cart(*args):
         for product_name in args:
             cart.append(product_name)
 
-    display_cart_items()
-    print("Items added successfully")
+    display_cart_items(cart)
     return cart
 
 
-def display_cart_items():
+def display_cart_items(items):
     """
     Display the products in cart
     :return: None
     """
     print("=" * 40)
     print("You have added below products to your cart.")
-    #print(products)
-    for sno, product in enumerate(cart, 1):
+    for sno, product in enumerate(items, 1):
         print(str(sno) + ". " + product)
     print("=" * 40, "\n")
 
