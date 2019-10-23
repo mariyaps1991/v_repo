@@ -6,8 +6,9 @@ def update_product_detail():
     pass
 
 
-def add_products_to_store(*args):
-    category = input("Enter the product category(fruits, grocery, stationary): ")
+def add_products_to_store(*args, category=None):
+    if category is None:
+        category = input("Enter the product category(fruits, grocery, stationary): ")
     item = {}
     price = 0
 
@@ -39,7 +40,6 @@ def add_products_to_store(*args):
         grocery.update(item)
 
     show_stocks(category)
-    print('Price: ', price)
     return price
 
 
@@ -56,4 +56,6 @@ def alert_product_expiry():
 
 
 if __name__ == '__main__':
-    add_products_to_store('Orange', 'Gova', 'Pomo')
+    add_products_to_store('Pencil', category='stationary')
+
+

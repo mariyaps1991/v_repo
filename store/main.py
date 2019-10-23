@@ -25,6 +25,16 @@ def list_options():
 
     print(choice)
 
+    """
+    action = {1: get_bill,
+              2: show_stocks,
+              3: add_products_to_store
+              }
+
+    execute = action[choice]
+    execute()
+    """
+
     if choice == 1:
         get_bill()
     elif choice == 2:

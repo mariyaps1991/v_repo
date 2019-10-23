@@ -1,8 +1,8 @@
-import store_data
+from store_data import data
 
 
 def show_stocks(category=None):
-    stocks = store_data.data
+    stocks = data
     print("-" * 50)
     print(f"{'Product':15} {'Price':6} {'Stock':5} {'Expiry Date':12}")
     print("=" * 50)
@@ -22,4 +22,4 @@ def show_stocks(category=None):
 
 
 if __name__ == '__main__':
-    show_stocks('grocery')
+    show_stocks('fruits')
