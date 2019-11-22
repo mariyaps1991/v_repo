@@ -1,11 +1,9 @@
 from billing.cart import add_products_to_cart
 #from store.store_data import data as store_data
-from billing import data
+from store.product_management import get_data
 
 
 def get_bill():
-    print(data)
-    exit()
     items = add_products_to_cart()
     bill_data = get_bill_data(items)        # "Product, price "
     if not bill_data:
@@ -20,6 +18,7 @@ def get_bill_data(cart_products):
     :return: None
     """
     bill_data = {}
+    store_data = get_data()
     for cart_product in cart_products:
         item_found = False
         for category in store_data:

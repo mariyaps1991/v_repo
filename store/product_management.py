@@ -55,7 +55,13 @@ def alert_product_expiry():
     pass
 
 
+def get_data():
+    return store_data
+
+
 if __name__ == '__main__':
     add_products_to_store('Pencil', category='stationary')
+    get_data()
+
 
 

@@ -58,7 +58,7 @@ for number in numbers:
 
 # tuple
 mytuple = (10, 20, 10, 20.0)
-"""
+
 
 
 discount = 20/100                   # global reference
@@ -92,14 +92,9 @@ print("Discount: ", dscnt)
 print("GST on amount is ", gst_amount)
 
 print("Discount: ", discount)
+"""
 
 
-
-
-
-
-
-
-
-
+from myfile import a
+print(a)
 
