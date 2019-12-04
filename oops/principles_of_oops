@@ -1,0 +1,63 @@
+
+Polymophism:
+
+    poly --> many
+
+    '+' --> operator
+            if numbers, then it will add
+            if string, then it will concatenate
+            if list, then it will extend it
+
+    Java:
+        def method1(a, b)
+            return a + b
+
+        def method1(a, b, c)
+            return a*b*c
+
+        method1(10,20)
+        method1()
+
+    Python:
+        def method(a, b)
+            return a + b
+
+        def method(a, b, c)
+            return a * b * c
+
+        def method(*args)
+            res = 1
+            for num in args:
+                res *= num
+            return res
+
+        method(10, 20)
+        method(10, 20, 30)
+
+
+Abstraction:
+    :: Providing the level of access to objects/to global
+
+    Car --> Service Center
+        --> driver(owner), mechanic
+
+Encapsulation:
+    :: Actions/data are defined to certain objects (Data Binding)
+    __private, __private__
+
+    Car --> Driver uses steering, break, gear (Manual)
+            Owner uses authentication, fingerprint system
+
+Inheritance:
+    :: Getting the existing code/functionality from one class to another class
+
+    1. Single inheritance (One to one)
+    2. Multiple inheritance (Many to one)
+    3. Multilevel inheritance (A --> B, C)
+    4. Hierachial inheritance (A --> B --> C)
+
+
+
+
+
+

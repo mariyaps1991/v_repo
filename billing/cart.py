@@ -34,7 +34,6 @@ def display_cart_items(items):
     print("=" * 40, "\n")
 
 
-
 def main():
     """
     Main function to add and display cart information

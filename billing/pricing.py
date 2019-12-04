@@ -12,6 +12,14 @@ def get_bill():
     calculate_total(bill_data)
 
 
+def show_bill_summary():
+    pass
+
+
+def view_detailed_bill():
+    pass
+
+
 def get_bill_data(cart_products):
     """
     This method is to print the bill copy

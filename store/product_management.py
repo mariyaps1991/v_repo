@@ -6,6 +6,10 @@ def update_product_detail():
     pass
 
 
+def remove_products():
+    pass
+
+
 def add_products_to_store(*args, category=None):
     if category is None:
         category = input("Enter the product category(fruits, grocery, stationary): ")
