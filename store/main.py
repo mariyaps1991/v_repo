@@ -1,10 +1,16 @@
 import subprocess
 from view import show_stocks
 from product_management import add_products_to_store, update_product_detail, remove_products
-from billing.pricing import get_bill, show_bill_summary, view_detailed_bill
+from billing.pricing import Pricing
+#from billing.pricing import get_bill, show_bill_summary, view_detailed_bill
+from utility.logger import Logging
 
 
 class Menu:
+
+    def __init__(self):
+        logging = Logging()
+        self.logger = logging.get_logger()
 
     def list_options(self):
 
@@ -25,24 +31,26 @@ class Menu:
                 Enter your choice: 
                 """))
 
-        print(choice)
-
-        action = {1: get_bill,
+        pr = Pricing()
+        action = {1: pr.get_bill,
                   2: show_stocks,
                   3: add_products_to_store,
                   4: update_product_detail,
                   5: remove_products,
-                  6: show_bill_summary,
-                  7: view_detailed_bill,
+                  6: pr.show_bill_summary,
+                  7: pr.view_detailed_bill,
                   8: exit
                   }
+
+        execute = None
 
         try:
             execute = action[choice]
         except KeyError:
-            print("Invalid option. Please select correct one from the menu.")
+            self.logger.error("Invalid option. Please select correct one from the menu.")
 
-        execute()
+        if execute:
+            execute()
 
     def run(self):
         while True:

@@ -1,0 +1,22 @@
+2019-12-04 09:43:45,842 INFO Line after adding file handler
+2019-12-04 09:43:45,842 ERROR There is no line after this.
+2019-12-05 09:04:05,254 INFO This is working fine as info
+2019-12-05 09:04:05,255 ERROR I have found an error at this line
+2019-12-05 09:04:05,255 WARNING We found the error but impact is minimal.
+2019-12-05 09:04:05,256 CRITICAL Oh no.. System/deamon is corrupted.
+2019-12-05 09:04:34,100 INFO This is working fine as info
+2019-12-05 09:04:34,100 ERROR I have found an error at this line
+2019-12-05 09:04:34,100 WARNING We found the error but impact is minimal.
+2019-12-05 09:04:34,100 CRITICAL Oh no.. System/deamon is corrupted.
+2019-12-05 09:05:59,451 INFO This is working fine as info
+2019-12-05 09:05:59,451 ERROR I have found an error at this line
+2019-12-05 09:05:59,451 WARNING We found the error but impact is minimal.
+2019-12-05 09:05:59,452 CRITICAL Oh no.. System/deamon is corrupted.
+2019-12-05 09:11:52,230 INFO This is working fine as info
+2019-12-05 09:11:52,230 ERROR I have found an error at this line
+2019-12-05 09:11:52,230 WARNING We found the error but impact is minimal.
+2019-12-05 09:11:52,230 CRITICAL Oh no.. System/deamon is corrupted.
+2019-12-05 09:13:51,266 INFO This is working fine as info
+2019-12-05 09:13:51,266 ERROR I have found an error at this line
+2019-12-05 09:13:51,266 WARNING We found the error but impact is minimal.
+2019-12-05 09:13:51,267 CRITICAL Oh no.. System/deamon is corrupted.
