@@ -8,8 +8,8 @@ class BasicCalculator:
         #BasicCalculator.count += 1
 
     @staticmethod
-    def addition(priceList):
-        return sum(priceList)
+    def addition(*prices):
+        return sum(prices)
 
     @staticmethod
     def subtraction(arg1, arg2):

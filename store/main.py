@@ -11,6 +11,8 @@ class Menu:
     def __init__(self):
         logging = Logging()
         self.logger = logging.get_logger()
+        self.logger.info('Object is created')
+        print(dir(self))
 
     def list_options(self):
 
@@ -54,9 +56,11 @@ class Menu:
 
     def run(self):
         while True:
+            self.logger.info("Displaying menu options")
             self.list_options()
 
 
 if __name__ == '__main__':
     menu = Menu()
     menu.run()
+    print(dir(menu))

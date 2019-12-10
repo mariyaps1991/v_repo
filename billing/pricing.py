@@ -1,11 +1,12 @@
 from billing.cart import add_products_to_cart
-#from store.store_data import data as store_data
 from store.product_management import get_data
 from calculator.basic_calculator import BasicCalculator
 from utility.logger import Logging
 
 
 class Pricing:
+
+    amount = 0
 
     def __init__(self, bill_data={}):
         if not bill_data:
@@ -21,13 +22,18 @@ class Pricing:
             self.logger.warning("Your cart is empty or not having available stocks")
             return None
         self.calculate_total()
+        self.show_bill_summary()
+        Pricing.show_bill_summary()
+        Pricing.view_details_bill()
 
     @staticmethod
     def show_bill_summary():
         pass
 
-    @staticmethod
-    def view_detailed_bill():
+    @classmethod
+    def view_detailed_bill(cls):
+        print("Bill amount is zero initially")
+        Pricing.amount = 100
         pass
 
     def get_bill_data(self, cart_products):
