@@ -53,8 +53,8 @@ Inheritance:
 
     1. Single inheritance (One to one)
     2. Multiple inheritance (Many to one)
-    3. Multilevel inheritance (A --> B, C)
-    4. Hierachial inheritance (A --> B --> C)
+    3. Multilevel inheritance (A --> B --> C)
+    4. Hierachial inheritance (A --> B, C, D)
 
 
 
