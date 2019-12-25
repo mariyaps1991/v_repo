@@ -245,3 +245,7 @@ def find_without_skip(root_dict, pattern):
 pattern = "Reservations_Instances_InstanceId"
 result = find_without_skip(json_data, pattern)
 print("\nExpected --> ", result["InstanceId"])
+
+pattern = "Reservations_SecurityGroups"
+result = find_without_skip(json_data, pattern)
+print("\nExpected --> ", result["SecurityGroups"])

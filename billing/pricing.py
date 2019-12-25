@@ -54,7 +54,6 @@ class Pricing:
             if not item_found:
                 self.logger.error(f'{cart_product} is not available in store')
 
-
     def calculate_total(self):
         """
         This is to provide the bill amount on the available items in cart
