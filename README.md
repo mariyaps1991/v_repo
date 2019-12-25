@@ -1,4 +1,4 @@
 # Billing Management Application
 
-![Billing_Project](billing_project.jpg)
+![Billing_Project](billing_application_image.jpg)
 Format: ![Alt Text](url)
