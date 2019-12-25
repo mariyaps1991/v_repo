@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a047937e-4f25-4452-85c8-e3322d5d12f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/v_repo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing_project.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing/pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/billing/pricing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/principles_of_oops" beforeDir="false" afterPath="$PROJECT_DIR$/oops/principles_of_oops" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/traverse_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/oops/traverse_dict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="a047937e-4f25-4452-85c8-e3322d5d12f8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -447,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576389980946</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adding project image">
+      <created>1577251716083</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1577251716083</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -481,7 +475,8 @@
     <MESSAGE value="Learnt principles of OOPS&#10;Converted main.py file code to OOPS&#10;learnt to use logger" />
     <MESSAGE value="Implemented single inheritance in Pricing&#10;Converted pricing.py file code to OOPS&#10;learnt class variable" />
     <MESSAGE value="JSON Parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON Parser" />
+    <MESSAGE value="Adding project image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding project image" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/billing/cart_new.py" />
